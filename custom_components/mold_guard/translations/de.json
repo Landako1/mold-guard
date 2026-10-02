@@ -1,0 +1,32 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Mold Guard Konfiguration",
+        "description": "Konfiguriere intelligentes Lüften und Schimmelschutz für einen Raum basierend auf absoluter Luftfeuchtigkeit.",
+        "data": {
+          "room_name": "Raumname",
+          "temp_sensor": "Innen-Temperatursensor",
+          "humidity_sensor": "Innen-Luftfeuchtigkeitssensor",
+          "outdoor_temp_sensor": "Außen-Temperatursensor",
+          "outdoor_humidity_sensor": "Außen-Luftfeuchtigkeitssensor",
+          "window_contact": "Fenster- / Türkontakt (Optional)",
+          "notify_service": "Benachrichtigungsdienst",
+          "abs_humidity_threshold": "Schwellenwert Absolute Feuchte (g/m³)",
+          "humidity_diff": "Mindest-Differenz nach draußen (g/m³)"
+        },
+        "data_description": {
+          "room_name": "Name des zu überwachenden Raums (z. B. Wohnzimmer, Schlafzimmer).",
+          "temp_sensor": "Temperatursensor im jeweiligen Raum.",
+          "humidity_sensor": "Sensor für relative Luftfeuchtigkeit im Raum.",
+          "outdoor_temp_sensor": "Temperatursensor der Außenwetterstation.",
+          "outdoor_humidity_sensor": "Luftfeuchtigkeitssensor der Außenwetterstation.",
+          "window_contact": "Optionaler Fenstersensor, um Warnungen bei bereits geöffnetem Fenster zu unterdrücken.",
+          "notify_service": "Ziel-Benachrichtigungsdienst (z. B. notify.alle_handys oder notify.mobile_app_iphone).",
+          "abs_humidity_threshold": "Schwellenwert in g/m³ für Lüftungswarnungen. Empfohlen: 8,5 g/m³ bei 18-20 °C Raumtemperatur.",
+          "humidity_diff": "Um wie viel g/m³ die Außenluft trockener sein muss als die Innenluft, damit Lüften empfohlen wird."
+        }
+      }
+    }
+  }
+}
