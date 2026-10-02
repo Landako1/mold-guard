@@ -1,0 +1,10 @@
+{
+  "domain": "mold_guard",
+  "name": "Mold Guard",
+  "codeowners": ["@Landako1"],
+  "config_flow": true,
+  "documentation": "https://github.com/Landako1/mold_guard",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/Landako1/mold_guard/issues",
+  "version": "1.0.0"
+}
