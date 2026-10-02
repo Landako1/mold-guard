@@ -1,5 +1,10 @@
 # 🛡️ Mold Guard for Home Assistant
 
+[![GitHub Release](https://img.shields.io/github/v/release/Landako1/mold-guard?style=for-the-badge&color=41BDF5)](https://github.com/Landako1/mold-guard/releases)
+[![HACS Custom](https://img.shields.io/badge/HACS-Custom-orange?style=for-the-badge)](https://github.com/Landako1/mold-guard)
+[![Home Assistant](https://img.shields.io/badge/Home%20Assistant-2024.1%2B-blue?style=for-the-badge&logo=homeassistant)](https://www.home-assistant.io/)
+[![License](https://img.shields.io/github/license/Landako1/mold-guard?style=for-the-badge)](LICENSE)
+
 [![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=Landako1&repository=mold-guard&category=integration)
 
 **Mold Guard** is a custom integration for Home Assistant designed to prevent mold growth—especially in cooler homes (18–20 °C)—by calculating **absolute humidity** ($g/m^3$) and alerting household members when mold-critical thresholds are reached.
