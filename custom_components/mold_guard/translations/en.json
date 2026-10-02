@@ -1,0 +1,32 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Mold Guard Configuration",
+        "description": "Configure smart ventilation and mold protection for a specific room based on absolute humidity.",
+        "data": {
+          "room_name": "Room Name",
+          "temp_sensor": "Indoor Temperature Sensor",
+          "humidity_sensor": "Indoor Relative Humidity Sensor",
+          "outdoor_temp_sensor": "Outdoor Temperature Sensor",
+          "outdoor_humidity_sensor": "Outdoor Relative Humidity Sensor",
+          "window_contact": "Window / Door Contact (Optional)",
+          "notify_service": "Notification Service",
+          "abs_humidity_threshold": "Absolute Humidity Threshold (g/m³)",
+          "humidity_diff": "Minimum Humidity Difference (g/m³)"
+        },
+        "data_description": {
+          "room_name": "Name of the room to monitor (e.g. Living Room, Bedroom).",
+          "temp_sensor": "Temperature sensor inside the room.",
+          "humidity_sensor": "Relative humidity sensor inside the room.",
+          "outdoor_temp_sensor": "Outdoor weather station temperature sensor.",
+          "outdoor_humidity_sensor": "Outdoor weather station humidity sensor.",
+          "window_contact": "Optional contact sensor to pause alerts while window is already open.",
+          "notify_service": "Notification service target (e.g. notify.alle_handys or notify.mobile_app_iphone).",
+          "abs_humidity_threshold": "Threshold in g/m³ to trigger ventilation warning. Recommended: 8.5 g/m³ for 18-20 °C room temperatures.",
+          "humidity_diff": "How much drier the outdoor air must be compared to indoor air (in g/m³) before recommending ventilation."
+        }
+      }
+    }
+  }
+}
