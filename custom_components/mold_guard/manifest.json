@@ -3,8 +3,8 @@
   "name": "Mold Guard",
   "codeowners": ["@Landako1"],
   "config_flow": true,
-  "documentation": "https://github.com/Landako1/mold_guard",
+  "documentation": "https://github.com/Landako1/mold-guard",
   "iot_class": "local_polling",
-  "issue_tracker": "https://github.com/Landako1/mold_guard/issues",
-  "version": "0.1.4"
+  "issue_tracker": "https://github.com/Landako1/mold-guard/issues",
+  "version": "0.1.5"
 }
