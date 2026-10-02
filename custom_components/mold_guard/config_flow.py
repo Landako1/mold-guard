@@ -1,6 +1,7 @@
 """Config flow for Mold Guard integration."""
 import voluptuous as vol
 from homeassistant import config_entries
+from homeassistant.helpers import selector
 import homeassistant.helpers.config_validation as cv
 
 from .const import DOMAIN, DEFAULT_ABSOLUTE_HUMIDITY_THRESHOLD, DEFAULT_HUMIDITY_DIFF
@@ -16,11 +17,21 @@ class MoldGuardConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
 
         data_schema = vol.Schema({
             vol.Required("room_name", default="Wohnzimmer"): str,
-            vol.Required("temp_sensor"): cv.entity_id,
-            vol.Required("humidity_sensor"): cv.entity_id,
-            vol.Required("outdoor_temp_sensor"): cv.entity_id,
-            vol.Required("outdoor_humidity_sensor"): cv.entity_id,
-            vol.Optional("window_contact"): cv.entity_id,
+            vol.Required("temp_sensor"): selector.EntitySelector(
+                selector.EntitySelectorConfig(domain="sensor")
+            ),
+            vol.Required("humidity_sensor"): selector.EntitySelector(
+                selector.EntitySelectorConfig(domain="sensor")
+            ),
+            vol.Required("outdoor_temp_sensor"): selector.EntitySelector(
+                selector.EntitySelectorConfig(domain="sensor")
+            ),
+            vol.Required("outdoor_humidity_sensor"): selector.EntitySelector(
+                selector.EntitySelectorConfig(domain="sensor")
+            ),
+            vol.Optional("window_contact"): selector.EntitySelector(
+                selector.EntitySelectorConfig(domain="binary_sensor")
+            ),
             vol.Optional("notify_service", default="notify.alle_handys"): str,
             vol.Optional("abs_humidity_threshold", default=DEFAULT_ABSOLUTE_HUMIDITY_THRESHOLD): float,
             vol.Optional("humidity_diff", default=DEFAULT_HUMIDITY_DIFF): float,
